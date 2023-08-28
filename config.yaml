@@ -1,0 +1,9 @@
+
+path: C:/Users/msi/PycharmProjects/ANPR_Yolov8
+train: train
+val: val
+
+
+# Classes
+names:
+  0: license plate
