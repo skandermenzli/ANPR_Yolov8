@@ -1,1 +1,2 @@
 libgl1
+python3-opencv
