@@ -2,7 +2,7 @@
 annotations/
 train/
 val/
-
+test_vids/
 output_video.mp4
 outputst_video.mp4
 
