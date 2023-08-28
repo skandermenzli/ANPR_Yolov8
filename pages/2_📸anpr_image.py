@@ -20,7 +20,7 @@ if uploaded_file is not None:
     image_rgb = image.convert("RGB")
     image_rgb.save("saved_image.jpg", format="JPEG")
     frame = cv2.imread("saved_image.jpg")
-    model = YOLO("../runs/detect/train/weights/best.pt")
+    model = YOLO("runs/detect/train/weights/best.pt")
     results = model(frame, save=True)
     print(results)
     if not results[0]:
