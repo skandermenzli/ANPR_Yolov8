@@ -6,7 +6,8 @@ or you can upload a video and it will track all cars detect license plate and re
 ## App Pics
 
 <img src="https://github.com/skandermenzli/ANPR_Yolov8/blob/main/assets/img_screen.PNG">
-
+<img src="https://github.com/skandermenzli/ANPR_Yolov8/blob/main/assets/vid_cap.PNG">
+<img src="https://github.com/skandermenzli/ANPR_Yolov8/blob/main/assets/vid_down.PNG">
 
 
 https://github.com/skandermenzli/ANPR_Yolov8/assets/80335572/77192134-6021-40fd-8817-54dae52e608a
@@ -39,3 +40,6 @@ run streamlit app:
 ```bash
 streamlit run app.py
 ```
+
+
+**Hit star ⭐ if you like this repo!!!**
