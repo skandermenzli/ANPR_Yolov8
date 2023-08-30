@@ -71,7 +71,6 @@ if st.session_state.value_set:
                                         cv2.rectangle(cropped_img, (int(x1), int(y1)), (int(x2), int(y2)), (255, 0, 0), 2)
                                         lp_crop = cropped_img[int(y1):int(y2), int(x1):int(x2)]
                                         lp_crop_gray = cv2.cvtColor(lp_crop, cv2.COLOR_BGR2GRAY)
-
                                         ocr_res = reader.readtext(lp_crop_gray)
                                         if not ocr_res:
                                             print("Tuple does not have at least two elements.")
