@@ -1,11 +1,8 @@
 import easyocr
 import cv2
-import numpy as np
 from ultralytics import YOLO
 import streamlit as st
-from PIL import Image
 from utils import update_csv
-from io import BytesIO
 import tempfile
 import os
 
@@ -42,7 +39,7 @@ if st.session_state.value_set:
         frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         # Define the codec and create a VideoWriter object
-        output_path = 'outputst_video.mp4'
+        output_path = 'output_video.mp4'
         fourcc = cv2.VideoWriter_fourcc(*'XVID')
         out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
         ret = True
@@ -101,19 +98,22 @@ if st.session_state.value_set:
 
 
 if not st.session_state.value_set:
+
+    # Video csv Download
+    st.header("Video File Download")
     st.download_button(label="Download CSV", data="output.csv", file_name="output.csv", key="csv")
 
     # Video File Download Button
     st.header("Video File Download")
     # Add a download button
 
-    video_file = open("outputst_video.mp4", "rb")
+    video_file = open("output_video.mp4", "rb")
     video_bytes = video_file.read()
     video_file.close()
     st.download_button(
                 label="Click to Download",
                 data=video_bytes,
-                file_name=os.path.basename("outputst_video.mp4"),
+                file_name=os.path.basename("output_video.mp4"),
                 mime="video/mp4", )
 
 
