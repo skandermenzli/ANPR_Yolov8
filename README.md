@@ -9,6 +9,10 @@ or you can upload a video and it will track all cars detect license plate and re
 
 
 
+https://github.com/skandermenzli/ANPR_Yolov8/assets/80335572/cfe23ca8-a65b-4077-8277-a01c2d1e6a29
+
+
+
 ## Installation
 
 1. Clone this repository to your local machine:
